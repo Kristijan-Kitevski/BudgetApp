@@ -1,0 +1,12 @@
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.deps.json
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.dll
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.AssemblyInfo.cs
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.pdb
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\bin\Debug\netcoreapp2.1\BudgetApp.Domain.dll
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\bin\Debug\netcoreapp2.1\BudgetApp.Domain.pdb
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.csproj.CopyComplete
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.dll
+C:\Users\Riste\source\repos\BudgetApp\BudgetApp.DataAccess\obj\Debug\netcoreapp2.1\BudgetApp.DataAccess.pdb
