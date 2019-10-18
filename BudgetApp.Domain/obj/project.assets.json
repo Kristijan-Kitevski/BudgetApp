@@ -2097,11 +2097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj",
       "projectName": "BudgetApp.Domain",
-      "projectPath": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj",
+      "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj",
       "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

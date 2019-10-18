@@ -1,0 +1,14 @@
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.Services.deps.json
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.Services.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.csprojAssemblyReference.cache
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.csproj.CoreCompileInputs.cache
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.AssemblyInfoInputs.cache
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.AssemblyInfo.cs
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.Services.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.Domain.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetApp.Domain.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.csproj.CopyComplete
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.pdb

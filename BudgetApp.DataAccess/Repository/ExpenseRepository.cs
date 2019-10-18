@@ -2,6 +2,7 @@
 using BudgetApp.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BudgetApp.DataAccess.Repository
@@ -12,30 +13,48 @@ namespace BudgetApp.DataAccess.Repository
         {
 
         }
-        public int Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
 
+       
         public IEnumerable<Expense> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Expenses;
         }
 
         public Expense GetByDate(DateTime date)
+        {
+            return _context.Expenses.FirstOrDefault(e => e.Date == date);
+        }
+
+        public Expense GetByTimePeriod(DateTime starDate, DateTime endDate)
         {
             throw new NotImplementedException();
         }
 
         public int Insert(Expense entity)
         {
-            throw new NotImplementedException();
+            _context.Expenses.Add(entity);
+            return _context.SaveChanges();
         }
 
         public int Update(Expense entity)
         {
-            throw new NotImplementedException();
+            _context.Expenses.Update(entity);
+            return _context.SaveChanges();
+
         }
+
+        public int Delete(int id)
+        {
+            Expense expense = _context.Expenses.FirstOrDefault(e => e.Id == id);
+            if (expense == null)
+            {
+                return -1;
+            }
+            _context.Expenses.Remove(expense);
+            return _context.SaveChanges();
+
+        }
+
     }
 
 

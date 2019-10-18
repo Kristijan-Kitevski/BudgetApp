@@ -27,13 +27,11 @@ namespace BudgetApp.DataAccess.Repository
 
          public Income GetByTimePeriod(DateTime startDate, DateTime endDate)
         {
-            var startTime = _context.Incomes.Where(s => s.Date == startDate);
-            var endTime = _context.Incomes.Where(e => e.Date == endDate);
-            //for (IEnumerable time = startTime; time <= endTime;)
-            //{
-            //    nekoja logika sto vrakja tabeli od do datum
-            //}
-            throw new NotImplementedException();
+            //var startTime = _context.Incomes.Where(s => s.Date == startDate);
+            //var endTime = _context.Incomes.Where(e => e.Date == endDate);
+            _context.Incomes.Where(i => i.Date > startDate && i.Date < endDate);
+
+           throw new NotImplementedException();
         }
 
         public int Insert(Income entity)

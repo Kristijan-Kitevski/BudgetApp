@@ -4399,11 +4399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.DataAccess\\BudgetApp.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.DataAccess\\BudgetApp.DataAccess.csproj",
       "projectName": "BudgetApp.DataAccess",
-      "projectPath": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.DataAccess\\BudgetApp.DataAccess.csproj",
+      "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.DataAccess\\BudgetApp.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4422,8 +4422,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\Kristijan\\Desktop\\Prodgect git\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj"
+            "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj"
             }
           }
         }

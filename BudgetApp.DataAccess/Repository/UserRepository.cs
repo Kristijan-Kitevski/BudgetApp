@@ -2,6 +2,7 @@
 using BudgetApp.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BudgetApp.DataAccess.Repository
@@ -13,12 +14,12 @@ namespace BudgetApp.DataAccess.Repository
 
         public User GetById(string id)
         {
-            throw new NotImplementedException();
+            return _context.Users.FirstOrDefault(u => u.Id == id);
         }
 
         public User GetByUsername(string username)
         {
-            throw new NotImplementedException();
+            return _context.Users.FirstOrDefault(u => u.UserName == username);
         }
 
         
