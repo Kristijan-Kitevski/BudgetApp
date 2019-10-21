@@ -4392,13 +4392,24 @@
         "dependencies": {
           "AutoMapper": "7.0.1",
           "BudgetApp.DataAccess": "1.0.0",
-          "BudgetApp.Domain": "1.0.0"
+          "BudgetApp.Domain": "1.0.0",
+          "BudgetAppWebModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BudgetApp.Services.dll": {}
         },
         "runtime": {
           "bin/placeholder/BudgetApp.Services.dll": {}
+        }
+      },
+      "BudgetAppWebModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/BudgetAppWebModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BudgetAppWebModels.dll": {}
         }
       }
     }
@@ -11935,6 +11946,11 @@
       "type": "project",
       "path": "../BudgetApp.Services/BudgetApp.Services.csproj",
       "msbuildProject": "../BudgetApp.Services/BudgetApp.Services.csproj"
+    },
+    "BudgetAppWebModels/1.0.0": {
+      "type": "project",
+      "path": "../BudgetAppWebModels/BudgetAppWebModels.csproj",
+      "msbuildProject": "../BudgetAppWebModels/BudgetAppWebModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

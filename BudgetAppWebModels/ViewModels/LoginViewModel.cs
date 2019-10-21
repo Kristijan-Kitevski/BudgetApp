@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BudgetAppWebModels.ViewModels
 {
-    class LoginViewModel
+    public class LoginViewModel
     {
         [Required]
         public string Username { get; set; }

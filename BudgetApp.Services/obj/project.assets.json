@@ -1362,6 +1362,16 @@
         "runtime": {
           "bin/placeholder/BudgetApp.Domain.dll": {}
         }
+      },
+      "BudgetAppWebModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/BudgetAppWebModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BudgetAppWebModels.dll": {}
+        }
       }
     }
   },
@@ -4490,6 +4500,11 @@
       "type": "project",
       "path": "../BudgetApp.Domain/BudgetApp.Domain.csproj",
       "msbuildProject": "../BudgetApp.Domain/BudgetApp.Domain.csproj"
+    },
+    "BudgetAppWebModels/1.0.0": {
+      "type": "project",
+      "path": "../BudgetAppWebModels/BudgetAppWebModels.csproj",
+      "msbuildProject": "../BudgetAppWebModels/BudgetAppWebModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4497,6 +4512,7 @@
       "AutoMapper >= 7.0.1",
       "BudgetApp.DataAccess >= 1.0.0",
       "BudgetApp.Domain >= 1.0.0",
+      "BudgetAppWebModels >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -4535,6 +4551,9 @@
             },
             "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj": {
               "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Domain\\BudgetApp.Domain.csproj"
+            },
+            "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetAppWebModels\\BudgetAppWebModels.csproj": {
+              "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetAppWebModels\\BudgetAppWebModels.csproj"
             }
           }
         }

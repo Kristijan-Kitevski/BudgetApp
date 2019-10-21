@@ -20,14 +20,9 @@ namespace BudgetApp.DataAccess.Repository
             return _context.Expenses;
         }
 
-        public Expense GetByDate(DateTime date)
+        public Expense GetById(int id)
         {
-            return _context.Expenses.FirstOrDefault(e => e.Date == date);
-        }
-
-        public Expense GetByTimePeriod(DateTime starDate, DateTime endDate)
-        {
-            throw new NotImplementedException();
+            return _context.Expenses.FirstOrDefault(e => e.Id == id);
         }
 
         public int Insert(Expense entity)

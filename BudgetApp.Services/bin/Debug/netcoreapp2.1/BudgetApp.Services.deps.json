@@ -10,7 +10,8 @@
         "dependencies": {
           "AutoMapper": "7.0.1",
           "BudgetApp.DataAccess": "1.0.0",
-          "BudgetApp.Domain": "1.0.0"
+          "BudgetApp.Domain": "1.0.0",
+          "BudgetAppWebModels": "1.0.0"
         },
         "runtime": {
           "BudgetApp.Services.dll": {}
@@ -894,6 +895,11 @@
         "runtime": {
           "BudgetApp.Domain.dll": {}
         }
+      },
+      "BudgetAppWebModels/1.0.0": {
+        "runtime": {
+          "BudgetAppWebModels.dll": {}
+        }
       }
     }
   },
@@ -1504,6 +1510,11 @@
       "sha512": ""
     },
     "BudgetApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BudgetAppWebModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

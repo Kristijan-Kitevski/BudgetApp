@@ -19,20 +19,12 @@ namespace BudgetApp.DataAccess.Repository
             return _context.Incomes;
         }
 
-        public Income GetByDate(DateTime date)
+        public Income GetById(int id)
         {
-            return _context.Incomes.FirstOrDefault(x => x.Date == date);
+            return _context.Incomes.FirstOrDefault(x => x.Id == id);
         }
 
 
-         public Income GetByTimePeriod(DateTime startDate, DateTime endDate)
-        {
-            //var startTime = _context.Incomes.Where(s => s.Date == startDate);
-            //var endTime = _context.Incomes.Where(e => e.Date == endDate);
-            _context.Incomes.Where(i => i.Date > startDate && i.Date < endDate);
-
-           throw new NotImplementedException();
-        }
 
         public int Insert(Income entity)
         {
@@ -54,5 +46,5 @@ namespace BudgetApp.DataAccess.Repository
             return _context.SaveChanges();
         }
 
-}
+    }
 }

@@ -5,16 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BudgetApp.DataAccess\BudgetApp.DataAccess.csproj" />
     <ProjectReference Include="..\BudgetApp.Domain\BudgetApp.Domain.csproj" />
+    <ProjectReference Include="..\BudgetAppWebModels\BudgetAppWebModels.csproj" />
   </ItemGroup>
 
 </Project>

@@ -94,3 +94,11 @@ C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\BudgetApp.Views.pdb
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\BudgetApp.csproj.CopyComplete
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\BudgetApp.csprojAssemblyReference.cache
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.Domain.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.Services.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetAppWebModels.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.Services.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.Domain.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetAppWebModels.pdb

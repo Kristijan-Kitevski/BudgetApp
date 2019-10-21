@@ -12,3 +12,5 @@ C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\net
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.csproj.CopyComplete
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.dll
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\obj\Debug\netcoreapp2.1\BudgetApp.Services.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetAppWebModels.dll
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Services\bin\Debug\netcoreapp2.1\BudgetAppWebModels.pdb

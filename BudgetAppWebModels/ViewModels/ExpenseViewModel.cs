@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BudgetAppWebModels.ViewModels
 {
-    class ExpenseViewModel
+     public class ExpenseViewModel
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
