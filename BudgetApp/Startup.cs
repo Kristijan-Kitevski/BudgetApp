@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using BudgetApp.Services.Helpers;
+using BudgetApp.Services.Interface;
+using BudgetApp.Services.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -32,10 +35,14 @@ namespace BudgetApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            DIModule.RegisterModule(services, Configuration.GetConnectionString("BudgetDbConnection"));
+
+            services.AddAutoMapper(x => x.AddProfile<MapperProfile>());
+
+            services.AddTransient<IIncomeService, IncomeService>();
+            services.AddTransient<IExpenseService, ExpenseService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddAutoMapper();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +66,7 @@ namespace BudgetApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Budget}/{action=Index}/{id?}");
             });
         }
     }

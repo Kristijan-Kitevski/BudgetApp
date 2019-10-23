@@ -1,4 +1,5 @@
 ﻿using BudgetApp.Domain.Models;
+using BudgetApp.Domain.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,6 @@ namespace BudgetApp.DataAccess
     {
         public BudgetDbContext(DbContextOptions options) : base(options) { }
 
-
         public DbSet<Income> Incomes { get; set; }
         public DbSet<Expense> Expenses { get; set; }
 
@@ -20,25 +20,33 @@ namespace BudgetApp.DataAccess
         {
             base.OnModelCreating(modelBuilder);
 
+            // Relations
             modelBuilder.Entity<User>()
                 .HasMany(u => u.Incomes)
                 .WithOne(i => i.User)
                 .HasForeignKey(i => i.UserId);
 
-
             modelBuilder.Entity<User>()
                 .HasMany(u => u.Expenses)
                 .WithOne(e => e.User)
                 .HasForeignKey(e => e.UserId);
-            
-            string userId = Guid.NewGuid().ToString();
+
+            // Data seeding
+            string adminRoleId = Guid.NewGuid().ToString();
+            modelBuilder.Entity<IdentityRole>().HasData(
+                new IdentityRole
+                {
+                    Id = adminRoleId,
+                    Name = "admin",
+                    NormalizedName = "ADMIN"
+                }   
+            );
 
             var hasher = new PasswordHasher<User>();
-
-          
+            string adminId = Guid.NewGuid().ToString();
             modelBuilder.Entity<User>().HasData(new User
             {
-                Id = userId,
+                Id = adminId,
                 UserName = "admin",
                 NormalizedUserName = "ADMIN",
                 Email = "admin@mail.com",
@@ -48,8 +56,35 @@ namespace BudgetApp.DataAccess
                 SecurityStamp = string.Empty
             });
 
-        }
-        
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+               new IdentityUserRole<string>
+               {
+                   UserId = adminId,
+                   RoleId = adminRoleId
+               }
+            );
 
+            modelBuilder.Entity<Income>().HasData(
+                new Income
+                {
+                    Id = 1,
+                    Date = DateTime.UtcNow,
+                    IncomeType = IncomeType.Salary,
+                    IncomeValue = 100.0,
+                    UserId = adminId
+                }    
+            );
+
+            modelBuilder.Entity<Expense>().HasData(
+                new Expense
+                {
+                    Id = 1,
+                    Date = DateTime.UtcNow,
+                    ExpensesType = ExpensesType.Grocery,
+                    ExpensesValue = 30.0,
+                    UserId = adminId
+                }    
+            );
+        }
     }
 }

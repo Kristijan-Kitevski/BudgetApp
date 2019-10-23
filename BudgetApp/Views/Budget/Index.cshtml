@@ -1,0 +1,56 @@
+﻿@model BudgetViewModel
+
+@{
+    ViewData["Title"] = "Budget";
+
+    var budgetValue = Model.IncomeSum - Model.ExpenseSum;
+}
+
+<h2>Budget</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Type</th>
+            <th scope="col">Value</th>
+            <th scope="col">Income/Expense</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (IncomeViewModel i in Model.Incomes)
+        {
+            <tr>
+                <td scope="row">@i.Id</td>
+                <td scope="row">@i.Date.ToString()</td>
+                <td scope="row">@i.IncomeType</td>
+                <td scope="row">@i.IncomeValue</td>
+                <td scope="row">Income</td>
+            </tr>
+        }
+
+        @foreach (ExpenseViewModel e in Model.Expenses)
+        {
+            <tr>
+                <td scope="row">@e.Id</td>
+                <td scope="row">@e.Date.ToString()</td>
+                <td scope="row">@e.ExpensesType</td>
+                <td scope="row">@e.ExpensesValue</td>
+                <td scope="row">Expense</td>
+            </tr>
+        }
+        <tr>
+            <td>Incomes Sum: @Model.IncomeSum</td>
+        </tr>
+
+        <tr>
+            <td>Expenses Sum: @Model.ExpenseSum</td>
+        </tr>
+
+        <tr>
+            <td>Budget: @budgetValue</td>
+        </tr>
+    </tbody>
+</table>

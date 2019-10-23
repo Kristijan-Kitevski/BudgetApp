@@ -1,9 +1,9 @@
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\bin\Debug\netcoreapp2.1\BudgetAppWebModels.deps.json
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\bin\Debug\netcoreapp2.1\BudgetAppWebModels.dll
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\bin\Debug\netcoreapp2.1\BudgetAppWebModels.pdb
-C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.csprojAssemblyReference.cache
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.csproj.CoreCompileInputs.cache
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.AssemblyInfoInputs.cache
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.AssemblyInfo.cs
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.dll
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetAppWebModels\obj\Debug\netcoreapp2.1\BudgetAppWebModels.csprojAssemblyReference.cache

@@ -79,10 +79,6 @@ C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\BudgetApp.TagHelpers.input.cache
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\BudgetApp.TagHelpers.output.cache
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\BudgetApp.RazorCoreGenerate.cache
-C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
-C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -102,3 +98,4 @@ C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.DataAccess.pdb
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.Domain.pdb
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetAppWebModels.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Budget\Index.g.cshtml.cs

@@ -8,23 +8,19 @@ using System.Text;
 
 namespace BudgetApp.DataAccess.Repository
 {
-    public class IncomeRepository : BaseRepository, IRepository<Income>
+    public class IncomeRepository : BaseRepository<BudgetDbContext>, IRepository<Income>
     {
         public IncomeRepository(BudgetDbContext context) : base(context) { }
 
-        
-
         public IEnumerable<Income> GetAll()
         {
-            return _context.Incomes;
+            return _context.Incomes.ToList();
         }
 
         public Income GetById(int id)
         {
             return _context.Incomes.FirstOrDefault(x => x.Id == id);
         }
-
-
 
         public int Insert(Income entity)
         {
@@ -34,7 +30,14 @@ namespace BudgetApp.DataAccess.Repository
 
         public int Update(Income entity)
         {
-            _context.Incomes.Update(entity);
+            Income income = _context.Incomes.FirstOrDefault(i => i.Id == entity.Id);
+            if (income == null)
+                return -1;
+
+            income.Date = entity.Date;
+            income.IncomeType = entity.IncomeType;
+            income.IncomeValue = entity.IncomeValue;
+
             return _context.SaveChanges();
         }
          public int Delete(int id)
@@ -45,6 +48,5 @@ namespace BudgetApp.DataAccess.Repository
             _context.Incomes.Remove(income);
             return _context.SaveChanges();
         }
-
     }
 }

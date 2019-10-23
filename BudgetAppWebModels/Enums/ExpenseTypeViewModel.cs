@@ -6,7 +6,6 @@ namespace BudgetAppWebModels.Enums
 {
     public enum ExpenseTypeViewModel
     {
-       
             Mortagage,
             Rent,
             StrataFees,
@@ -25,6 +24,5 @@ namespace BudgetAppWebModels.Enums
             HealtExpense,
             Gifts,
             OtherExpenses
-        
     }
 }

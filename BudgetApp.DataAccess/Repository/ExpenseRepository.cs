@@ -7,17 +7,13 @@ using System.Text;
 
 namespace BudgetApp.DataAccess.Repository
 {
-    public class ExpenseRepository : BaseRepository, IRepository<Expense>
+    public class ExpenseRepository : BaseRepository<BudgetDbContext>, IRepository<Expense>
     {
-        public ExpenseRepository(BudgetDbContext context) : base (context)
-        {
-
-        }
-
+        public ExpenseRepository(BudgetDbContext context) : base (context) { }
        
         public IEnumerable<Expense> GetAll()
         {
-            return _context.Expenses;
+            return _context.Expenses.ToList();
         }
 
         public Expense GetById(int id)
@@ -33,24 +29,24 @@ namespace BudgetApp.DataAccess.Repository
 
         public int Update(Expense entity)
         {
-            _context.Expenses.Update(entity);
-            return _context.SaveChanges();
+            Expense expense = _context.Expenses.FirstOrDefault(e => e.Id == entity.Id);
+            if (expense == null)
+                return -1;
 
+            expense.Date = entity.Date;
+            expense.ExpensesType = entity.ExpensesType;
+            expense.ExpensesValue = entity.ExpensesValue;
+
+            return _context.SaveChanges();
         }
 
         public int Delete(int id)
         {
             Expense expense = _context.Expenses.FirstOrDefault(e => e.Id == id);
             if (expense == null)
-            {
                 return -1;
-            }
             _context.Expenses.Remove(expense);
             return _context.SaveChanges();
-
         }
-
     }
-
-
 }

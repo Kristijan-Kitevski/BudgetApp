@@ -11,7 +11,6 @@ namespace BudgetAppWebModels.ViewModels
         public DateTime Date { get; set; }
         public double IncomeValue { get; set; }
         public IncomeTypeViewModel IncomeType { get; set; }
-        public int UserId { get; set; }
-        public virtual UserViewModel User { get; set; }
+        public UserViewModel User { get; set; }
     }
 }

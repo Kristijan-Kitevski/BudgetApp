@@ -286,6 +286,9 @@
             "projectReferences": {
               "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Services\\BudgetApp.Services.csproj": {
                 "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetApp.Services\\BudgetApp.Services.csproj"
+              },
+              "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetAppWebModels\\BudgetAppWebModels.csproj": {
+                "projectPath": "C:\\Users\\Kristijan\\Desktop\\budget app\\BudgetApp\\BudgetAppWebModels\\BudgetAppWebModels.csproj"
               }
             }
           }
@@ -318,6 +321,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
             }
           },
           "imports": [

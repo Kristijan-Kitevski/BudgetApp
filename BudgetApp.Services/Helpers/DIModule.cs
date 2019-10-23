@@ -16,9 +16,9 @@ namespace BudgetApp.Services.Helpers
     {
         public static IServiceCollection RegisterModule(IServiceCollection services, string connectionString)
         {
-
-            services.AddDbContext<BudgetDbContext>
-                (x => x.UseSqlServer(connectionString));
+            services.AddDbContext<BudgetDbContext>(
+                x => x.UseSqlServer(connectionString)
+            );
 
             services.AddIdentity<User, IdentityRole>(options =>
             {
@@ -34,7 +34,6 @@ namespace BudgetApp.Services.Helpers
             services.AddTransient<IUserRepository, UserRepository>();
 
             return services;
-
         }
     }
 }

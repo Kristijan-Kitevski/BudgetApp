@@ -1,5 +1,6 @@
 ﻿using BudgetApp.DataAccess.Interfaces;
 using BudgetApp.Domain.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,9 @@ using System.Text;
 
 namespace BudgetApp.DataAccess.Repository
 {
-    public class UserRepository :BaseRepository, IUserRepository
+    public class UserRepository : BaseRepository<BudgetDbContext>, IUserRepository
     {
         public UserRepository(BudgetDbContext context) : base(context) { }
-
 
         public User GetById(string id)
         {
@@ -21,7 +21,5 @@ namespace BudgetApp.DataAccess.Repository
         {
             return _context.Users.FirstOrDefault(u => u.UserName == username);
         }
-
-        
     }
 }
