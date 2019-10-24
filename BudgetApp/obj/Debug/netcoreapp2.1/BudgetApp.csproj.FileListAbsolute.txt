@@ -99,3 +99,6 @@ C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetApp.Domain.pdb
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\bin\Debug\netcoreapp2.1\BudgetAppWebModels.pdb
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Budget\Index.g.cshtml.cs
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\User\LogIn.g.cshtml.cs
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\User\Register.g.cshtml.cs
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp\obj\Debug\netcoreapp2.1\Razor\Views\Income\CreateNewIncome.g.cshtml.cs

@@ -1354,7 +1354,7 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Identity": "2.1.1",
-          "Microsoft.Extensions.Identity.Core": "2.1.1"
+          "Microsoft.Extensions.Identity.Stores": "2.1.1"
         },
         "compile": {
           "bin/placeholder/BudgetApp.Domain.dll": {}

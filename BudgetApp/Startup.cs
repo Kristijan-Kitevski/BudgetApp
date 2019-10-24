@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NToastNotify;
 
 namespace BudgetApp
 {
@@ -39,8 +40,16 @@ namespace BudgetApp
 
             services.AddAutoMapper(x => x.AddProfile<MapperProfile>());
 
+            services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
+            {
+                ProgressBar = false,
+                PositionClass = ToastPositions.TopRight,
+                CloseButton = true
+            });
+
             services.AddTransient<IIncomeService, IncomeService>();
             services.AddTransient<IExpenseService, ExpenseService>();
+            services.AddTransient<IUserService, UserService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -66,7 +75,7 @@ namespace BudgetApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Budget}/{action=Index}/{id?}");
+                    template: "{controller=User}/{action=LogIn}/{id?}");
             });
         }
     }

@@ -45,7 +45,7 @@
               "target": "Package",
               "version": "[2.1.1, )"
             },
-            "Microsoft.Extensions.Identity.Core": {
+            "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[2.1.1, )"
             },

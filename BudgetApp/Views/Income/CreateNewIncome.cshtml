@@ -1,0 +1,35 @@
+﻿@model IncomeViewModel
+@{
+    ViewData["Title"] = "CreateNewIncome";
+}
+
+<h2>Create New Income</h2>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Income Type
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Salary</a>
+        <a class="dropdown-item" href="#">ConsultingIncome</a>
+        <a class="dropdown-item" href="#">GamblingIncome</a>
+        <a class="dropdown-item" href="#">RentalIncome</a>
+        <a class="dropdown-item" href="#">BusinessIncome</a>
+        <a class="dropdown-item" href="#">SellingIntellectualProperty</a>
+        <a class="dropdown-item" href="#">MultiLevelMarketingIncome</a>
+        <a class="dropdown-item" href="#">Divident</a>
+        <a class="dropdown-item" href="#">SellingRealEstate</a>
+        <a class="dropdown-item" href="#">SellingOtherAssets</a>
+        <a class="dropdown-item" href="#">OtherIncome</a>
+        
+    </div>
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Income</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<button type="button" class="btn btn-outline-success" onclick="location.href='@Url.Action("CreateNewIncome", "Income", new { IncomeValue = 123, IncomeType = 1 })'">Add Income</button>
