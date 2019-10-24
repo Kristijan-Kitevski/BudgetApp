@@ -30,3 +30,4 @@ C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Domain\obj\Debug\netco
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Domain\obj\Debug\netcoreapp2.1\BudgetApp.Domain.AssemblyInfo.cs
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Domain\obj\Debug\netcoreapp2.1\BudgetApp.Domain.dll
 C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Domain\obj\Debug\netcoreapp2.1\BudgetApp.Domain.pdb
+C:\Users\Kristijan\Desktop\budget app\BudgetApp\BudgetApp.Domain\obj\Debug\netcoreapp2.1\BudgetApp.Domain.csprojAssemblyReference.cache

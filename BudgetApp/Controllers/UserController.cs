@@ -5,12 +5,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using BudgetApp.Services.Interface;
 using BudgetAppWebModels.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NToastNotify;
 using Serilog;
 
 namespace BudgetApp.Controllers
 {
+    
     public class UserController : Controller
     {
         private readonly IUserService _userService;
@@ -24,11 +26,13 @@ namespace BudgetApp.Controllers
         }
 
 
+
         public IActionResult LogIn()
         {
             return View(new LoginViewModel());
         }
 
+       
         [HttpPost]
         public IActionResult LogIn(LoginViewModel model)
         {

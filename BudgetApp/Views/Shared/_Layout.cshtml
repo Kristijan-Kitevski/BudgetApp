@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BudgetApp</title>
+    <title>@ViewData["Title"] - BUDGET APP</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -27,15 +27,22 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a asp-area="" asp-controller="User" asp-action="LogIn" class="navbar-brand">BudgetApp</a>
-              
+
             </div>
+
+          @if (User.Identity.IsAuthenticated)
+          {
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Income" asp-action="CreateNewIncome">Income</a></li>
-                    <li><a asp-area="" asp-controller="Expense" asp-action="Index" >Expense</a></li>
-                    <li><a asp-area="" asp-controller="Budget" asp-action="Index">Overview</a></li>
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li><a asp-controller="Income" asp-action="CreateNewIncome">Income</a></li>
+                        <li><a asp-controller="Expense" asp-action="CreateNewIncome">Expense</a></li>
+                        <li><a asp-controller="Budget" asp-action="CreateNewExpense">Overview</a></li>
+                        <li><a asp-controller="User" asp-action="Logout">Logout</a></li>
+                     
                 </ul>
             </div>
+          }
         </div>
     </nav>
 
@@ -44,9 +51,11 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - BudgetApp</p>
-        </footer>
+        <center>
+            <footer>
+                <p>&copy; 2019 - Your personal BudgetApp</p>
+            </footer>
+        </center>
     </div>
 
     <environment include="Development">

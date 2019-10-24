@@ -22,13 +22,15 @@
     <tbody>
         @foreach (IncomeViewModel i in Model.Incomes)
         {
-            <tr>
-                <td scope="row">@i.Id</td>
-                <td scope="row">@i.Date.ToString()</td>
-                <td scope="row">@i.IncomeType</td>
-                <td scope="row">@i.IncomeValue</td>
-                <td scope="row">Income</td>
-            </tr>
+        <tr>
+            <td scope="row">@i.Id</td>
+            <td scope="row">@i.Date.ToString()</td>
+            <td scope="row">@i.IncomeType</td>
+            <td scope="row">@i.IncomeValue</td>
+            <td scope="row">Income</td>
+            <td >Income</td>
+            <td scope="row">Income</td>
+        </tr>
         }
 
         @foreach (ExpenseViewModel e in Model.Expenses)
