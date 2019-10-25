@@ -12,7 +12,7 @@ using Serilog;
 
 namespace BudgetApp.Controllers
 {
-    
+    [Authorize]
     public class UserController : Controller
     {
         private readonly IUserService _userService;
@@ -26,35 +26,37 @@ namespace BudgetApp.Controllers
         }
 
 
-
+        [AllowAnonymous]
         public IActionResult LogIn()
         {
             return View(new LoginViewModel());
         }
 
-       
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult LogIn(LoginViewModel model)
         {
-            if (ModelState.IsValid)
-            {
-                _userService.Login(model);
-                
-                _toastNotification.AddSuccessToastMessage("You have successfully loged in!");
+            _userService.Login(model);
 
-                Log.Error($"User with username {model.Username} logged in as regular user!");
+            //if ()
+            //{
+            //    _userService.Login(model);
 
-                return RedirectToAction("Index", "Budget");
-            }
-            _toastNotification.AddWarningToastMessage("Username or password are incorect!");
-            return View(model);
+            //    _toastNotification.AddSuccessToastMessage("You have successfully loged in!");
+
+            //    Log.Error($"User with username {model.Username} logged in as regular user!");
+
+            //    return RedirectToAction("Index", "Budget");
+            //}
+            //_toastNotification.AddWarningToastMessage("Username or password are incorect!");
+            return RedirectToAction("Index", "Budget");
         }
-
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View(new RegisterViewModel());
         }
-
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Register(RegisterViewModel model)
         {

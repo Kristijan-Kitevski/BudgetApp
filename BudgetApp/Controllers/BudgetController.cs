@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using BudgetApp.Services.Interface;
 using BudgetAppWebModels.Enums;
 using BudgetAppWebModels.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BudgetApp.Controllers
 {
+    [Authorize]
     public class BudgetController : Controller
     {
         private readonly IIncomeService _incomeService;

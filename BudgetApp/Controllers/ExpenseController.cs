@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using BudgetAppWebModels.Enums;
 using BudgetAppWebModels.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BudgetApp.Controllers
-{
+{   [Authorize]
     public class ExpenseController : Controller
     {
         public IActionResult CreateNewExpense()

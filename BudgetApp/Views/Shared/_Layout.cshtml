@@ -34,12 +34,13 @@
           {
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 
-                        <li><a asp-controller="Income" asp-action="CreateNewIncome">Income</a></li>
-                        <li><a asp-controller="Expense" asp-action="CreateNewIncome">Expense</a></li>
-                        <li><a asp-controller="Budget" asp-action="CreateNewExpense">Overview</a></li>
-                        <li><a asp-controller="User" asp-action="Logout">Logout</a></li>
-                     
+                    <li><a asp-controller="Income" asp-action="CreateNewIncome">Income</a></li>
+                    <li><a asp-controller="Expense" asp-action="CreateNewExpense">Expense</a></li>
+                    <li><a asp-controller="Budget" asp-action="Index">Overview</a></li>
+                    <li><a asp-controller="User" asp-action="Logout">Logout</a></li>
+
                 </ul>
             </div>
           }
