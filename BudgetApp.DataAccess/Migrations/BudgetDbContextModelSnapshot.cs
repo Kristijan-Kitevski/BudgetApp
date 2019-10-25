@@ -138,7 +138,7 @@ namespace BudgetApp.DataAccess.Migrations
                     b.ToTable("AspNetRoles");
 
                     b.HasData(
-                        new { Id = "b399fa0b-9565-4f40-8964-737a808f888c", ConcurrencyStamp = "1c9fd79b-62f5-4f9f-aa3b-7880bfe686a5", Name = "admin", NormalizedName = "ADMIN" }
+                        new { Id = "650693c3-3034-482a-9183-59a27f2c831d", ConcurrencyStamp = "20bfaab7-9570-496e-8e53-578a57a0c50c", Name = "admin", NormalizedName = "ADMIN" }
                     );
                 });
 

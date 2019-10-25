@@ -8,7 +8,7 @@ namespace BudgetAppWebModels.ViewModels
      public class ExpenseViewModel
     {
         public int Id { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime Date = DateTime.Now;
         public double ExpensesValue { get; set; }
         public ExpenseTypeViewModel ExpensesType { get; set; }
         public UserViewModel User { get; set; }

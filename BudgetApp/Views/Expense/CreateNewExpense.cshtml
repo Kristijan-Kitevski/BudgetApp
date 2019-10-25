@@ -3,7 +3,7 @@
     ViewData["Title"] = "CreateNewExpense";
 }
 
-<h2>CreateNewExpense</h2>
+<h2>Create new expense</h2>
 
 
 
@@ -11,12 +11,15 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-4">
-            <label asp-for="ExpensesType">Choise Expense type from list: </label>
+            <label asp-for="ExpensesType">Choise expense type from list: </label>
             <div class="input-group">
                 <select name="number">
-                    @foreach (var item in Enum.GetValues(typeof(ExpenseTypeViewModel)).Cast<ExpenseTypeViewModel>().ToList())
+                    @foreach (var item in Enum.GetValues(typeof(ExpenseTypeViewModel)).Cast<ExpenseTypeViewModel>())
                     {
+                         
+
                         <option value="@item">@item</option>
+
                     }
                 </select>
             </div>

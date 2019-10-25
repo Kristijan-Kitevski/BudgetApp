@@ -29,8 +29,8 @@
             <td scope="row">Income</td>
             
             <td>
-                <a asp-action="DeleteIncome" asp-controller="Budget" asp-route-i="@i.Id" class="btn btn-danger">Delete</a>
-                <a asp-action="EditIncome" asp-controller="Budget" asp-route-i="@i.Id" class="btn btn-primary">Update</a>
+                <a asp-action="DeleteIncome" asp-controller="Budget"  class="btn btn-danger">Delete</a>
+                <a asp-action="EditIncome" asp-controller="Budget"  class="btn btn-primary">Update</a>
             </td>
         </tr>
         }
@@ -44,8 +44,8 @@
                 <td scope="row">@e.ExpensesValue</td>
                 <td scope="row">Expense</td>
                 <td>
-                    <a asp-action="DeleteExpense" asp-controller="Budget" asp-route-e="@e.Id" class="btn btn-danger">Delete</a>
-                    <a asp-action="EditExpense" asp-controller="Budget" asp-route-e="@e.Id" class="btn btn-primary">Update</a>
+                    <a asp-controller="Budget" asp-action="DeleteExpense"  class="btn btn-danger">Delete</a>
+                    <a asp-controller="Budget" asp-action="EditExpense"  class="btn btn-primary">Update</a>
                 </td>
             </tr>
         }

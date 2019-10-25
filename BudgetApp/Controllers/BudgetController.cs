@@ -37,9 +37,15 @@ namespace BudgetApp.Controllers
 
             return View(model);
         }
-        public IActionResult LandingPage()
+
+        public IActionResult DeleteExpense(int id )
         {
+
+            _expenseService.DeleteExpense(id);
+
             return View();
+
         }
+       
     }
 }

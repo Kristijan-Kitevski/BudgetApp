@@ -19,7 +19,7 @@ namespace BudgetApp.Controllers
        
 
 
-        public UserController(IUserService userService, IToastNotification toastNotification)
+        public UserController(IUserService userService)
         {
             _userService = userService;
           

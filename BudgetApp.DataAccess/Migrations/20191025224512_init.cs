@@ -26,7 +26,6 @@ namespace BudgetApp.DataAccess.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
                     UserName = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
                     Email = table.Column<string>(maxLength: 256, nullable: true),
@@ -41,6 +40,7 @@ namespace BudgetApp.DataAccess.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
+                    Id = table.Column<string>(nullable: false),
                     FullName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -201,7 +201,7 @@ namespace BudgetApp.DataAccess.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "b399fa0b-9565-4f40-8964-737a808f888c", "1c9fd79b-62f5-4f9f-aa3b-7880bfe686a5", "admin", "ADMIN" });
+                values: new object[] { "650693c3-3034-482a-9183-59a27f2c831d", "20bfaab7-9570-496e-8e53-578a57a0c50c", "admin", "ADMIN" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
