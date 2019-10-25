@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BudgetApp.DataAccess.Migrations
 {
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -201,27 +201,7 @@ namespace BudgetApp.DataAccess.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "42a534f6-b94e-4e31-b6b1-4ccd0ab688a2", "34014b1b-6946-4a08-9d43-1af21bf3a7c9", "admin", "ADMIN" });
-
-            migrationBuilder.InsertData(
-                table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FullName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "89428883-cde9-4ba9-9764-fe9d45d06581", 0, "ddd67845-02e3-4831-a168-093687433adb", "admin@mail.com", true, null, false, null, "admin@mail.com", "ADMIN", "AQAAAAEAACcQAAAAEMuFqzuKfEpAktJNzmMxqSNJvAAk5/25Pln5KJalyiStcdHlIboGYHjZFOY+32kxDw==", null, false, "", false, "admin" });
-
-            migrationBuilder.InsertData(
-                table: "AspNetUserRoles",
-                columns: new[] { "UserId", "RoleId" },
-                values: new object[] { "89428883-cde9-4ba9-9764-fe9d45d06581", "42a534f6-b94e-4e31-b6b1-4ccd0ab688a2" });
-
-            migrationBuilder.InsertData(
-                table: "Expenses",
-                columns: new[] { "Id", "Date", "ExpensesType", "ExpensesValue", "UserId" },
-                values: new object[] { 1, new DateTime(2019, 10, 23, 14, 51, 29, 396, DateTimeKind.Utc), 7, 30.0, "89428883-cde9-4ba9-9764-fe9d45d06581" });
-
-            migrationBuilder.InsertData(
-                table: "Incomes",
-                columns: new[] { "Id", "Date", "IncomeType", "IncomeValue", "UserId" },
-                values: new object[] { 1, new DateTime(2019, 10, 23, 14, 51, 29, 396, DateTimeKind.Utc), 0, 100.0, "89428883-cde9-4ba9-9764-fe9d45d06581" });
+                values: new object[] { "b399fa0b-9565-4f40-8964-737a808f888c", "1c9fd79b-62f5-4f9f-aa3b-7880bfe686a5", "admin", "ADMIN" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

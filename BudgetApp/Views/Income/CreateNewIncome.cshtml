@@ -5,42 +5,31 @@
 
 <h2>Create new income.</h2>
 
-<div class="row">
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Income Type
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            @*@foreach (var item in Model.IncomeType)
-                {
-                    <a class="dropdown-item" href="#">@item</a>
-
-                    
-
-                }*@
 
 
-            <a class="dropdown-item" href="#">Salary</a>
-            <a class="dropdown-item" href="#">ConsultingIncome</a>
-            <a class="dropdown-item" href="#">GamblingIncome</a>
-            <a class="dropdown-item" href="#">RentalIncome</a>
-            <a class="dropdown-item" href="#">BusinessIncome</a>
-            <a class="dropdown-item" href="#">SellingIntellectualProperty</a>
-            <a class="dropdown-item" href="#">MultiLevelMarketingIncome</a>
-            <a class="dropdown-item" href="#">Divident</a>
-            <a class="dropdown-item" href="#">SellingRealEstate</a>
-            <a class="dropdown-item" href="#">SellingOtherAssets</a>
-            <a class="dropdown-item" href="#">OtherIncome</a>
+<form asp-controller="Income" asp-action="CreateNewIncome" method="post">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <label asp-for="IncomeType">Choise income type from list: </label>
+            <div class="input-group">
+                <select name="number">
+                    @foreach (var item in Enum.GetValues(typeof(IncomeTypeViewModel)).Cast<IncomeTypeViewModel>().ToList())
+                    {
+                        <option value="@item">@item</option>
+                    }
+                </select>
+            </div>
+            <span asp-validation-for="IncomeType" class="text-danger"></span>
 
+            <label asp-for="IncomeValue">Enter value:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                <input asp-for="IncomeValue" type="text" class="form-control" placeholder="Income" />
+            </div>
+            <span asp-validation-for="IncomeValue" class="text-danger"></span>
+            <button class="btn btn-success" type="submit">Add Income</button>
         </div>
     </div>
+</form>
 
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">Income</span>
-        </div>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-    </div>
-
-    <button type="button" class="btn btn-outline-success" onclick="location.href='@Url.Action("CreateNewIncome", "Income", new { IncomeValue = 123, IncomeType = 1 })'">Add Income</button>
-</div>

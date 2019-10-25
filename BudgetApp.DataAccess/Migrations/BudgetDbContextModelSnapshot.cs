@@ -38,10 +38,6 @@ namespace BudgetApp.DataAccess.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Expenses");
-
-                    b.HasData(
-                        new { Id = 1, Date = new DateTime(2019, 10, 23, 14, 51, 29, 396, DateTimeKind.Utc), ExpensesType = 7, ExpensesValue = 30.0, UserId = "89428883-cde9-4ba9-9764-fe9d45d06581" }
-                    );
                 });
 
             modelBuilder.Entity("BudgetApp.Domain.Models.Income", b =>
@@ -63,10 +59,6 @@ namespace BudgetApp.DataAccess.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Incomes");
-
-                    b.HasData(
-                        new { Id = 1, Date = new DateTime(2019, 10, 23, 14, 51, 29, 396, DateTimeKind.Utc), IncomeType = 0, IncomeValue = 100.0, UserId = "89428883-cde9-4ba9-9764-fe9d45d06581" }
-                    );
                 });
 
             modelBuilder.Entity("BudgetApp.Domain.Models.User", b =>
@@ -120,10 +112,6 @@ namespace BudgetApp.DataAccess.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
-
-                    b.HasData(
-                        new { Id = "89428883-cde9-4ba9-9764-fe9d45d06581", AccessFailedCount = 0, ConcurrencyStamp = "ddd67845-02e3-4831-a168-093687433adb", Email = "admin@mail.com", EmailConfirmed = true, LockoutEnabled = false, NormalizedEmail = "admin@mail.com", NormalizedUserName = "ADMIN", PasswordHash = "AQAAAAEAACcQAAAAEMuFqzuKfEpAktJNzmMxqSNJvAAk5/25Pln5KJalyiStcdHlIboGYHjZFOY+32kxDw==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "admin" }
-                    );
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -150,7 +138,7 @@ namespace BudgetApp.DataAccess.Migrations
                     b.ToTable("AspNetRoles");
 
                     b.HasData(
-                        new { Id = "42a534f6-b94e-4e31-b6b1-4ccd0ab688a2", ConcurrencyStamp = "34014b1b-6946-4a08-9d43-1af21bf3a7c9", Name = "admin", NormalizedName = "ADMIN" }
+                        new { Id = "b399fa0b-9565-4f40-8964-737a808f888c", ConcurrencyStamp = "1c9fd79b-62f5-4f9f-aa3b-7880bfe686a5", Name = "admin", NormalizedName = "ADMIN" }
                     );
                 });
 
@@ -223,10 +211,6 @@ namespace BudgetApp.DataAccess.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles");
-
-                    b.HasData(
-                        new { UserId = "89428883-cde9-4ba9-9764-fe9d45d06581", RoleId = "42a534f6-b94e-4e31-b6b1-4ccd0ab688a2" }
-                    );
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

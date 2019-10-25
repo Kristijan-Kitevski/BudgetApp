@@ -27,8 +27,11 @@
             <td scope="row">@i.IncomeType</td>
             <td scope="row">@i.IncomeValue</td>
             <td scope="row">Income</td>
-            <td >Income</td>
-            <td scope="row">Income</td>
+            
+            <td>
+                <a asp-action="DeleteIncome" asp-controller="Budget" asp-route-i="@i.Id" class="btn btn-danger">Delete</a>
+                <a asp-action="EditIncome" asp-controller="Budget" asp-route-i="@i.Id" class="btn btn-primary">Update</a>
+            </td>
         </tr>
         }
 
@@ -40,6 +43,10 @@
                 <td scope="row">@e.ExpensesType</td>
                 <td scope="row">@e.ExpensesValue</td>
                 <td scope="row">Expense</td>
+                <td>
+                    <a asp-action="DeleteExpense" asp-controller="Budget" asp-route-e="@e.Id" class="btn btn-danger">Delete</a>
+                    <a asp-action="EditExpense" asp-controller="Budget" asp-route-e="@e.Id" class="btn btn-primary">Update</a>
+                </td>
             </tr>
         }
         <tr>
@@ -53,11 +60,6 @@
         <tr>
             <td>Budget: @budgetValue</td>
         </tr>
-        <div class ="navbar-left" >
-              
-
-
-
-        </div>
+        
     </tbody>
 </table>

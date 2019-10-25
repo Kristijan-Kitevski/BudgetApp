@@ -33,6 +33,7 @@ namespace BudgetApp.DataAccess
 
             // Data seeding
             string adminRoleId = Guid.NewGuid().ToString();
+
             modelBuilder.Entity<IdentityRole>().HasData(
                 new IdentityRole
                 {
@@ -42,49 +43,49 @@ namespace BudgetApp.DataAccess
                 }   
             );
 
-            var hasher = new PasswordHasher<User>();
-            string adminId = Guid.NewGuid().ToString();
-            modelBuilder.Entity<User>().HasData(new User
-            {
-                Id = adminId,
-                UserName = "admin",
-                NormalizedUserName = "ADMIN",
-                Email = "admin@mail.com",
-                NormalizedEmail = "admin@mail.com",
-                EmailConfirmed = true,
-                PasswordHash = hasher.HashPassword(null, "adminadmin"),
-                SecurityStamp = string.Empty
-            });
+            //var hasher = new PasswordHasher<User>();
+            //string adminId = Guid.NewGuid().ToString();
+            //modelBuilder.Entity<User>().HasData(new User
+            //{
+            //    Id = adminId,
+            //    UserName = "admin",
+            //    NormalizedUserName = "ADMIN",
+            //    Email = "admin@mail.com",
+            //    NormalizedEmail = "admin@mail.com",
+            //    EmailConfirmed = true,
+            //    PasswordHash = hasher.HashPassword(null, "adminadmin"),
+            //    SecurityStamp = string.Empty
+            //});
 
-            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
-               new IdentityUserRole<string>
-               {
-                   UserId = adminId,
-                   RoleId = adminRoleId
-               }
-            );
+            //modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+            //   new IdentityUserRole<string>
+            //   {
+            //       UserId = adminId,
+            //       RoleId = adminRoleId
+            //   }
+            //);
 
-            modelBuilder.Entity<Income>().HasData(
-                new Income
-                {
-                    Id = 1,
-                    Date = DateTime.UtcNow,
-                    IncomeType = IncomeType.Salary,
-                    IncomeValue = 100.0,
-                    UserId = adminId
-                }    
-            );
+            //modelBuilder.Entity<Income>().HasData(
+            //    new Income
+            //    {
+            //        Id = 1,
+            //        Date = DateTime.UtcNow,
+            //        IncomeType = IncomeType.Salary,
+            //        IncomeValue = 100.0,
+            //        UserId = adminId
+            //    }    
+            //);
 
-            modelBuilder.Entity<Expense>().HasData(
-                new Expense
-                {
-                    Id = 1,
-                    Date = DateTime.UtcNow,
-                    ExpensesType = ExpensesType.Grocery,
-                    ExpensesValue = 30.0,
-                    UserId = adminId
-                }    
-            );
+            //modelBuilder.Entity<Expense>().HasData(
+            //    new Expense
+            //    {
+            //        Id = 1,
+            //        Date = DateTime.UtcNow,
+            //        ExpensesType = ExpensesType.Grocery,
+            //        ExpensesValue = 30.0,
+            //        UserId = adminId
+            //    }    
+            //);
         }
     }
 }

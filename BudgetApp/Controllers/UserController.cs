@@ -38,17 +38,6 @@ namespace BudgetApp.Controllers
         {
             _userService.Login(model);
 
-            //if ()
-            //{
-            //    _userService.Login(model);
-
-            //    _toastNotification.AddSuccessToastMessage("You have successfully loged in!");
-
-            //    Log.Error($"User with username {model.Username} logged in as regular user!");
-
-            //    return RedirectToAction("Index", "Budget");
-            //}
-            //_toastNotification.AddWarningToastMessage("Username or password are incorect!");
             return RedirectToAction("Index", "Budget");
         }
         [AllowAnonymous]

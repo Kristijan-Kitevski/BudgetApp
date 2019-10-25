@@ -37,5 +37,9 @@ namespace BudgetApp.Controllers
 
             return View(model);
         }
+        public IActionResult LandingPage()
+        {
+            return View();
+        }
     }
 }

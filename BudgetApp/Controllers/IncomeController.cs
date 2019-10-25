@@ -27,10 +27,10 @@ namespace BudgetApp.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateNewIncome(IncomeViewModel IncomeValue, IncomeTypeViewModel IncomeType)
+        public IActionResult CreateNewIncome(IncomeViewModel incomeValue)
         {
-
-            return RedirectToAction("");
+            _incomeService.CreateIncome(incomeValue);
+            return RedirectToAction("Index", "Budget");
         }
 
     }
