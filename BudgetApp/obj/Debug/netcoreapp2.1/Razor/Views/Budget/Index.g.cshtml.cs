@@ -137,7 +137,7 @@ using BudgetAppWebModels.Enums;
             WriteLiteral("</td>\r\n            <td scope=\"row\">Income</td>\r\n            \r\n            <td>\r\n                ");
             EndContext();
             BeginContext(844, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "129313aff2b0402c81e9f92f5c4a335f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ddae8168e64418ba59fcf49dead8fde", async() => {
                 BeginContext(940, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -175,7 +175,7 @@ using BudgetAppWebModels.Enums;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(968, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ae873139cf64108b66e187590458be1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "402c602991b54bc5a88f747cdd57af30", async() => {
                 BeginContext(1063, 6, true);
                 WriteLiteral("Update");
                 EndContext();
@@ -270,7 +270,7 @@ using BudgetAppWebModels.Enums;
             WriteLiteral("</td>\r\n                <td scope=\"row\">Expense</td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1506, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e46f9c7aa9b4bd1b691fcc91f2bf860", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d2ce46d04344d029bee034cffce6784", async() => {
                 BeginContext(1603, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -308,7 +308,7 @@ using BudgetAppWebModels.Enums;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(1635, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd46c42e0dee471d93bf7165b04262d0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "762ec991697147b18b60334f399d745b", async() => {
                 BeginContext(1731, 6, true);
                 WriteLiteral("Update");
                 EndContext();

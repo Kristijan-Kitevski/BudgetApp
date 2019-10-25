@@ -13,13 +13,13 @@ namespace BudgetApp.Services.Services
 {
     public class IncomeService : IIncomeService
     {
-        private readonly IUserRepository _userRepository;
+      
         private readonly IRepository<Income> _incomeRepository;
         private readonly IMapper _mapper;
 
-        public IncomeService(IUserRepository userRepository, IRepository<Income> incomeRepository, IMapper mapper)
+        public IncomeService(IRepository<Income> incomeRepository, IMapper mapper)
         {
-            _userRepository = userRepository;
+           
             _incomeRepository = incomeRepository;
             _mapper = mapper;
         }

@@ -11,8 +11,8 @@ namespace BudgetApp.Services.Interface
         IEnumerable<ExpenseViewModel> GetAllExpenses();
         IEnumerable<ExpenseViewModel> GetExpenses(SortBy sortBy, IEnumerable<Filter> filters);
         ExpenseViewModel GetExpense(int id);
-        void CreateExpense(ExpenseViewModel income);
-        void EditExpense(ExpenseViewModel income);
+        void CreateExpense(ExpenseViewModel expense);
+        void EditExpense(ExpenseViewModel expense);
         void DeleteExpense(int id);
     }
 }

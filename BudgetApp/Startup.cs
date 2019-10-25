@@ -38,6 +38,7 @@ namespace BudgetApp
 
             DIModule.RegisterModule(services, Configuration.GetConnectionString("BudgetDbConnection"));
 
+
             services.AddAutoMapper(x => x.AddProfile<MapperProfile>());
 
             services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()

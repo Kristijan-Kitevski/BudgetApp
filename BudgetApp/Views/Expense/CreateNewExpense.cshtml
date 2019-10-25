@@ -1,7 +1,35 @@
-﻿
+﻿@model ExpenseViewModel
 @{
     ViewData["Title"] = "CreateNewExpense";
 }
 
 <h2>CreateNewExpense</h2>
+
+
+
+<form asp-controller="Expense" asp-action="CreateNewExpense" method="post">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <label asp-for="ExpensesType">Choise Expense type from list: </label>
+            <div class="input-group">
+                <select name="number">
+                    @foreach (var item in Enum.GetValues(typeof(ExpenseTypeViewModel)).Cast<ExpenseTypeViewModel>().ToList())
+                    {
+                        <option value="@item">@item</option>
+                    }
+                </select>
+            </div>
+            <span asp-validation-for="ExpensesType" class="text-danger"></span>
+
+            <label asp-for="ExpensesValue">Enter value:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                <input asp-for="ExpensesValue" type="text" class="form-control" placeholder="Expense" />
+            </div>
+            <span asp-validation-for="ExpensesValue" class="text-danger"></span>
+            <button class="btn btn-success" type="submit">Add Expense</button>
+        </div>
+    </div>
+</form>
 

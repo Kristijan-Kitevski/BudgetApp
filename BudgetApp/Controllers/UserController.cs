@@ -16,13 +16,13 @@ namespace BudgetApp.Controllers
     public class UserController : Controller
     {
         private readonly IUserService _userService;
-        private readonly IToastNotification _toastNotification;
+       
 
 
         public UserController(IUserService userService, IToastNotification toastNotification)
         {
             _userService = userService;
-            _toastNotification = toastNotification;
+          
         }
 
 

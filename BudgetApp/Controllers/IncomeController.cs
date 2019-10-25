@@ -13,23 +13,25 @@ namespace BudgetApp.Controllers
     [Authorize]
     public class IncomeController : Controller
     {
-        ////private readonly IUserService _userService;
         private readonly IIncomeService _incomeService;
 
         public IncomeController(IIncomeService incomeService)
         {
             _incomeService = incomeService;
         }
-
+        [AllowAnonymous]
         public IActionResult CreateNewIncome()
         {
             return View(new IncomeViewModel());
         }
+
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateNewIncome(IncomeViewModel incomeValue)
+        public IActionResult CreateNewIncome(IncomeViewModel income)
         {
-            _incomeService.CreateIncome(incomeValue);
+            _incomeService.CreateIncome(income);
+
             return RedirectToAction("Index", "Budget");
         }
 
